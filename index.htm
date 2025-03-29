@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Crack the Code Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <h1><u>Crack the Code</u></h1>
+    <div id="game-container">
+        <p>"Enter the 3-digit code to win!"</p>
+        <div>
+            <input type="number" id="digit1" min="0" max="9" placeholder="0">
+            <input type="number" id="digit2" min="0" max="9" placeholder="0">
+            <input type="number" id="digit3" min="0" max="9" placeholder="0">
+        </div>
+        <button onclick="checkCode()">Submit</button>
+        <button onclick="resetGame()">Reset</button>
+        <div id="message"></div>
+    </div>
+    <div id="hints">
+        <h2>Hints</h2>
+    </div>
+    <p style="padding: 10px;margin: 10px auto;border-radius: 5px;font-size: 16px;color: black;border: 2px solid white;background-color: wheat;">Press Reset to start a new game. </p>
+    <script src="game.js"></script>
+
+    
+</body>
+</html>
